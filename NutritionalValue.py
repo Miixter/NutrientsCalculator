@@ -14,6 +14,15 @@ def calc_ingredients(ingredienser):
                 fett = fett + float(Ingredients.Ingredient_dict[ingredienser][1])/100*float(element_separation[1])
                 kolhydrat = kolhydrat + float(Ingredients.Ingredient_dict[ingredienser][2])/100*float(element_separation[1])
                 protein = protein + float(Ingredients.Ingredient_dict[ingredienser][3])/100*float(element_separation[1])
+            
+            if element_separation[0].lower() not in Ingredients.Ingredient_dict:
+                print("***")
+                print(f"{element_separation[0]} finns inte med i dictionaryt. Gör om för att få ut rätt värden.")
+                kcal = 0
+                fett = 0
+                kolhydrat = 0
+                protein = 0
+                break
     return [kcal, fett, kolhydrat, protein]
 
 def calc_meals(måltider):
