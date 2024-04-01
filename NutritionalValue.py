@@ -106,7 +106,7 @@ def handle_input(message):
     
     else:
         print("***")
-        message3 = input("Otillåten input. SKriv antingen 'I', 'M', eller 'exit': ")
+        message3 = input("Otillåten input. SKriv antingen 'I', 'M', 'visa' eller 'exit': ")
         handle_input(message3)
 
 
