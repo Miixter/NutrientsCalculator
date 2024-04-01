@@ -25,6 +25,6 @@ Ingredient_dict = {
 Måltider_dict = {
     "köttfärssåsspaghetti": [664.78, 16.36, 87.23, 37.23],
     "laxäggnudlarteriyaki": [721.03, 20.77, 88.43, 42.14],
-    "biffstroganoff": [586, 7 ,46.6] #4personer: 500g lövbiff, 2 lökar, 2vitlöksklyftor, 3msk tomatpure, 2dl minifräsch, 1msk dijonsenap, 400g penne, 4dl vatten, kryddor!
+    "biffstroganoff": [586, 7, 82.9 ,46.6] #4personer: 500g lövbiff, 2 lökar, 2vitlöksklyftor, 3msk tomatpure, 2dl minifräsch, 1msk dijonsenap, 400g penne, 4dl vatten, kryddor!
     
 }
