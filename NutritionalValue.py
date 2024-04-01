@@ -67,6 +67,7 @@ def handle_input(message):
         list1 = calc_ingredients(ingredienser)
         total_values = [list1[0]+list2[0], list1[1]+list2[1], list1[2]+list2[2], list1[3]+list2[3]]
         print("***")
+        print("DITT INTAG AV NÄRINGSÄMNEN FÖR DET DU HAR MATAT IN:")
         print(f"antal kalorier: {total_values[0]} \nantal gram fett: {total_values[1]} \nantal gram kolhydrater: {total_values[2]} \nantal gram protein: {total_values[3]}")
         if sum(total_values) == 0:
             print("Hmm, 0 på allt verkar fel. Se till att inputen har rätt syntax, och att varje namn finns med i ingrediens- eller måltidsdictionaryt!")
