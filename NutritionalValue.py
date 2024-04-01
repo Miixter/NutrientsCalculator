@@ -41,12 +41,22 @@ def welcome():
     run()
 
 def run():    
-    print("Ange ifall du vill lägga in ingredienser direkt, eller välja en redan färdigkomponerad måltid. För att avsluta programmet, skriv 'exit'. ")
-    message = input("Skriv antingen M eller I: ")
+    print("Ange ifall du vill lägga in ingredienser direkt, eller välja en redan färdigkomponerad måltid. SKriv 'visa' för att se tillgängliga ingredienser/måltider. För att avsluta programmet, skriv 'exit'. ")
+    message = input("Skriv antingen 'M', 'I', 'visa' eller 'exit': ")
     print("***")
     handle_input(message)
     
 def handle_input(message):
+    if message == "visa":
+        print("***INGREDIENSER TILLGÄNGLIGA***")
+        for ingrediens in Ingredients.Ingredient_dict:
+            print(ingrediens)
+        print("")
+        print("***MÅLTIDER TILLGÄNGLIGA***")
+        for måltider in Ingredients.Måltider_dict:
+            print(måltider)
+        print("***")
+        run()
     if message == "I":
         list2 = [0,0,0,0]
         ingredienser = input("Skriv upp samtliga ingredienser som du använt i din måltid, följt av antalet gram. Exempelvis 'kvarg,100 rostmackor,75':\n")
@@ -86,7 +96,7 @@ def handle_input(message):
     
     else:
         print("***")
-        message3 = input("Otillåten input. SKriv antingen 'I', 'M', eller 'exit' för att avsluta programmet: ")
+        message3 = input("Otillåten input. SKriv antingen 'I', 'M', eller 'exit': ")
         handle_input(message3)
 
 
