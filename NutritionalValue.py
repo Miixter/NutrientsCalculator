@@ -41,7 +41,7 @@ def welcome():
     run()
 
 def run():    
-    print("Ange ifall du vill lägga in ingredienser direkt, eller välja en redan färdigkomponerad måltid. SKriv 'visa' för att se tillgängliga ingredienser/måltider. För att avsluta programmet, skriv 'exit'. ")
+    print("Ange ifall du vill lägga in ingredienser direkt, eller välja en redan färdigkomponerad måltid. Skriv 'visa' för att se tillgängliga ingredienser/måltider. För att avsluta programmet, skriv 'exit'. ")
     message = input("Skriv antingen 'M', 'I', 'visa' eller 'exit': ")
     print("***")
     handle_input(message)
